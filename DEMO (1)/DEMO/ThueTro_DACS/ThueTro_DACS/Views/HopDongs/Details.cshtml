@@ -1,0 +1,43 @@
+﻿@model ThueTro_DACS.Models.HopDong
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HopDong</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CT_HopDong.IdHopDong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CT_HopDong.IdHopDong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenPhongTro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenPhongTro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TongTien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TongTien)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdCTHD }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
